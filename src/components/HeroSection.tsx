@@ -26,9 +26,9 @@ export function HeroSection() {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.3 }}
-          className="text-6xl md:text-8xl font-bold text-red-600 mb-6"
+          className="text-6xl md:text-8xl font-bold text-red-600 mb-6 goofy"
         >
-          С 14 Февраля Настюша!
+          <span className="goofy-emoji">💥</span> С 14 Февраля Настюша! <span className="goofy-emoji">🥳</span>
         </motion.h1>
         
         <motion.p
@@ -63,6 +63,10 @@ export function HeroSection() {
               <Heart className="w-8 h-8 text-red-500 fill-red-500" />
             </motion.div>
           ))}
+        </motion.div>
+
+        <div className="mt-8 flex justify-center">
+          <button className="emoji-badge wiggle pop" aria-label="goofy-cta">Ого! 🎉</button>
         </motion.div>
       </div>
     </section>

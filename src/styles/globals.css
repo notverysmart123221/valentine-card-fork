@@ -183,3 +183,83 @@
 html {
   font-size: var(--font-size);
 }
+
+/* --- Goofy / TikTok-style playful utilities --- */
+.goofy-emoji {
+  display: inline-block;
+  transform: translateY(-2px);
+  filter: drop-shadow(0 6px 12px rgba(0,0,0,0.08));
+}
+
+.goofy {
+  background: linear-gradient(90deg,#ff5f6d,#ffc371);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  text-shadow: 0 6px 24px rgba(255,95,109,0.08);
+  display: inline-block;
+}
+
+@keyframes wiggle {
+  0% { transform: rotate(-4deg) translateY(0); }
+  25% { transform: rotate(6deg) translateY(-4px); }
+  50% { transform: rotate(-6deg) translateY(0); }
+  75% { transform: rotate(6deg) translateY(-2px); }
+  100% { transform: rotate(0deg) translateY(0); }
+}
+
+.wiggle {
+  display: inline-block;
+  animation: wiggle 1.6s ease-in-out infinite;
+  transform-origin: center;
+}
+
+@keyframes pop {
+  0% { transform: scale(0.85); opacity: 0.8; }
+  40% { transform: scale(1.12); opacity: 1; }
+  100% { transform: scale(1); opacity: 1; }
+}
+
+.pop {
+  display: inline-block;
+  animation: pop 700ms cubic-bezier(.2,.9,.3,1) both;
+}
+
+.emoji-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 6px 10px;
+  border-radius: 999px;
+  background: linear-gradient(90deg,#ffecd2,#fcb69f);
+  box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+  font-weight: 600;
+}
+
+.confetti {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  overflow: hidden;
+}
+.confetti-piece {
+  position: absolute;
+  width: 10px;
+  height: 14px;
+  border-radius: 2px;
+  opacity: 0.95;
+  transform-origin: center;
+  animation: confetti-fall linear infinite;
+}
+
+@keyframes confetti-fall {
+  0% { transform: translateY(-20vh) rotate(0deg); opacity: 1; }
+  100% { transform: translateY(120vh) rotate(720deg); opacity: 0.8; }
+}
+
+.small-note {
+  font-size: 0.9rem;
+  opacity: 0.9;
+  transform: translateY(0.5px);
+}
+
