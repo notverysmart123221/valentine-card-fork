@@ -67,7 +67,7 @@ export function HeroSection() {
 
         <div className="mt-8 flex justify-center">
           <button className="emoji-badge wiggle pop" aria-label="goofy-cta">Ого! 🎉</button>
-        </motion.div>
+        </div>
       </div>
     </section>
   );
