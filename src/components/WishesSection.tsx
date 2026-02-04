@@ -2,12 +2,12 @@ import { Heart, Sparkles, Smile, Sun, Star, Gift } from 'lucide-react';
 
 export function WishesSection() {
   const wishes = [
-    { icon: Heart, text: "Желаю носков, которые поют 'ла-ла' по утрам 🧦🎶" },
-    { icon: Sparkles, text: "Пусть твоя тень станет твоим лучшим бариста ☕️🕶️" },
-    { icon: Smile, text: "Пускай каждая булочка знает твое имя и улыбается 🥐😁" },
-    { icon: Sun, text: "Желаю тебе ультра-редкого мороженого 'завтра в понедельник' 🍨🔮" },
-    { icon: Star, text: "Пусть холодильник всегда шепчет комплименты 🌟🧊" },
-    { icon: Gift, text: "Пусть твои тапочки получат премию 'Лучший актёр' 🏆👟" }
+    { icon: Heart, text: "пошел на хуй 🧦🎶" },
+    { icon: Sparkles, text: "соси мой шмайзер ☕️🕶️" },
+    { icon: Smile, text: "булки у тя тооп 🥐😁" },
+    { icon: Sun, text: "пососите подрочите 🍨🔮" },
+    { icon: Star, text: "линга гули гули 🌟🧊" },
+    { icon: Gift, text: "шоб мать сдохла 🏆👟" }
   ];
 
   return (

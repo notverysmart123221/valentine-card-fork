@@ -1,265 +1,95 @@
-@custom-variant dark (&:is(.dark *));
+/* --- MAXIMUM UYEBANSTVO EDITION --- */
 
 :root {
-  --font-size: 16px;
-  --background: #ffffff;
-  --foreground: oklch(0.145 0 0);
-  --card: #ffffff;
-  --card-foreground: oklch(0.145 0 0);
-  --popover: oklch(1 0 0);
-  --popover-foreground: oklch(0.145 0 0);
-  --primary: #030213;
-  --primary-foreground: oklch(1 0 0);
-  --secondary: oklch(0.95 0.0058 264.53);
-  --secondary-foreground: #030213;
-  --muted: #ececf0;
-  --muted-foreground: #717182;
-  --accent: #e9ebef;
-  --accent-foreground: #030213;
-  --destructive: #d4183d;
-  --destructive-foreground: #ffffff;
-  --border: rgba(0, 0, 0, 0.1);
-  --input: transparent;
-  --input-background: #f3f3f5;
-  --switch-background: #cbced4;
-  --font-weight-medium: 500;
-  --font-weight-normal: 400;
-  --ring: oklch(0.708 0 0);
-  --chart-1: oklch(0.646 0.222 41.116);
-  --chart-2: oklch(0.6 0.118 184.704);
-  --chart-3: oklch(0.398 0.07 227.392);
-  --chart-4: oklch(0.828 0.189 84.429);
-  --chart-5: oklch(0.769 0.188 70.08);
-  --radius: 0.625rem;
-  --sidebar: oklch(0.985 0 0);
-  --sidebar-foreground: oklch(0.145 0 0);
-  --sidebar-primary: #030213;
-  --sidebar-primary-foreground: oklch(0.985 0 0);
-  --sidebar-accent: oklch(0.97 0 0);
-  --sidebar-accent-foreground: oklch(0.205 0 0);
-  --sidebar-border: oklch(0.922 0 0);
-  --sidebar-ring: oklch(0.708 0 0);
+  /* Заменяем основные цвета на кислоту */
+  --background: #00ff00; /* Ярко-зеленый */
+  --foreground: #ff00ff; /* Маджента */
+  --primary: #ffff00;    /* Желтый */
+  --primary-foreground: #0000ff;
+  --card: #00ffff;       /* Циан */
+  --radius: 50px;        /* Всё максимально круглое и уродливое */
 }
 
-.dark {
-  --background: oklch(0.145 0 0);
-  --foreground: oklch(0.985 0 0);
-  --card: oklch(0.145 0 0);
-  --card-foreground: oklch(0.985 0 0);
-  --popover: oklch(0.145 0 0);
-  --popover-foreground: oklch(0.985 0 0);
-  --primary: oklch(0.985 0 0);
-  --primary-foreground: oklch(0.205 0 0);
-  --secondary: oklch(0.269 0 0);
-  --secondary-foreground: oklch(0.985 0 0);
-  --muted: oklch(0.269 0 0);
-  --muted-foreground: oklch(0.708 0 0);
-  --accent: oklch(0.269 0 0);
-  --accent-foreground: oklch(0.985 0 0);
-  --destructive: oklch(0.396 0.141 25.723);
-  --destructive-foreground: oklch(0.637 0.237 25.331);
-  --border: oklch(0.269 0 0);
-  --input: oklch(0.269 0 0);
-  --ring: oklch(0.439 0 0);
-  --font-weight-medium: 500;
-  --font-weight-normal: 400;
-  --chart-1: oklch(0.488 0.243 264.376);
-  --chart-2: oklch(0.696 0.17 162.48);
-  --chart-3: oklch(0.769 0.188 70.08);
-  --chart-4: oklch(0.627 0.265 303.9);
-  --chart-5: oklch(0.645 0.246 16.439);
-  --sidebar: oklch(0.205 0 0);
-  --sidebar-foreground: oklch(0.985 0 0);
-  --sidebar-primary: oklch(0.488 0.243 264.376);
-  --sidebar-primary-foreground: oklch(0.985 0 0);
-  --sidebar-accent: oklch(0.269 0 0);
-  --sidebar-accent-foreground: oklch(0.985 0 0);
-  --sidebar-border: oklch(0.269 0 0);
-  --sidebar-ring: oklch(0.439 0 0);
-}
-
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --color-card: var(--card);
-  --color-card-foreground: var(--card-foreground);
-  --color-popover: var(--popover);
-  --color-popover-foreground: var(--popover-foreground);
-  --color-primary: var(--primary);
-  --color-primary-foreground: var(--primary-foreground);
-  --color-secondary: var(--secondary);
-  --color-secondary-foreground: var(--secondary-foreground);
-  --color-muted: var(--muted);
-  --color-muted-foreground: var(--muted-foreground);
-  --color-accent: var(--accent);
-  --color-accent-foreground: var(--accent-foreground);
-  --color-destructive: var(--destructive);
-  --color-destructive-foreground: var(--destructive-foreground);
-  --color-border: var(--border);
-  --color-input: var(--input);
-  --color-input-background: var(--input-background);
-  --color-switch-background: var(--switch-background);
-  --color-ring: var(--ring);
-  --color-chart-1: var(--chart-1);
-  --color-chart-2: var(--chart-2);
-  --color-chart-3: var(--chart-3);
-  --color-chart-4: var(--chart-4);
-  --color-chart-5: var(--chart-5);
-  --radius-sm: calc(var(--radius) - 4px);
-  --radius-md: calc(var(--radius) - 2px);
-  --radius-lg: var(--radius);
-  --radius-xl: calc(var(--radius) + 4px);
-  --color-sidebar: var(--sidebar);
-  --color-sidebar-foreground: var(--sidebar-foreground);
-  --color-sidebar-primary: var(--sidebar-primary);
-  --color-sidebar-primary-foreground: var(--sidebar-primary-foreground);
-  --color-sidebar-accent: var(--sidebar-accent);
-  --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
-  --color-sidebar-border: var(--sidebar-border);
-  --color-sidebar-ring: var(--sidebar-ring);
-}
-
-@layer base {
-  * {
-    @apply border-border outline-ring/50;
-  }
-
-  body {
-    @apply bg-background text-foreground;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-  }
-}
-
-/**
- * Base typography. This is not applied to elements which have an ancestor with a Tailwind text class.
- */
-@layer base {
-  :where(:not(:has([class*=' text-']), :not(:has([class^='text-'])))) {
-    h1 {
-      font-size: var(--text-2xl);
-      font-weight: var(--font-weight-medium);
-      line-height: 1.5;
-    }
-
-    h2 {
-      font-size: var(--text-xl);
-      font-weight: var(--font-weight-medium);
-      line-height: 1.5;
-    }
-
-    h3 {
-      font-size: var(--text-lg);
-      font-weight: var(--font-weight-medium);
-      line-height: 1.5;
-    }
-
-    h4 {
-      font-size: var(--text-base);
-      font-weight: var(--font-weight-medium);
-      line-height: 1.5;
-    }
-
-    label {
-      font-size: var(--text-base);
-      font-weight: var(--font-weight-medium);
-      line-height: 1.5;
-    }
-
-    button {
-      font-size: var(--text-base);
-      font-weight: var(--font-weight-medium);
-      line-height: 1.5;
-    }
-
-    input {
-      font-size: var(--text-base);
-      font-weight: var(--font-weight-normal);
-      line-height: 1.5;
-    }
-  }
-}
-
-html {
-  font-size: var(--font-size);
-}
-
-/* --- Goofy / TikTok-style playful utilities --- */
-.goofy-emoji {
-  display: inline-block;
-  transform: translateY(-2px);
-  filter: drop-shadow(0 6px 12px rgba(0,0,0,0.08));
+body {
+  /* Фон в стиле сайтов 90-х */
+  background-image: radial-gradient(circle, #ff00ff 20%, #00ff00 20%, #00ff00 40%, #ffff00 40%, #ffff00 60%, #00ffff 60%, #00ffff 80%, #ff0000 80%);
+  background-size: 50px 50px;
+  font-family: "Comic Sans MS", "Comic Sans", cursive !important;
+  cursor: url('https://cur.cursors-4u.net/symbols/sym-1/sym49.cur'), auto !important;
 }
 
 .goofy {
-  background: linear-gradient(90deg,#ff5f6d,#ffc371);
+  background: linear-gradient(180deg, #ff0000, #ffff00, #00ff00, #0000ff);
   -webkit-background-clip: text;
-  background-clip: text;
   color: transparent;
-  text-shadow: 0 6px 24px rgba(255,95,109,0.08);
-  display: inline-block;
+  font-size: 3rem !important;
+  font-weight: 900;
+  filter: drop-shadow(5px 5px 0px #000);
+  animation: rainbow-stretch 0.5s linear infinite;
 }
 
-@keyframes wiggle {
-  0% { transform: rotate(-4deg) translateY(0); }
-  25% { transform: rotate(6deg) translateY(-4px); }
-  50% { transform: rotate(-6deg) translateY(0); }
-  75% { transform: rotate(6deg) translateY(-2px); }
-  100% { transform: rotate(0deg) translateY(0); }
+@keyframes rainbow-stretch {
+  0% { transform: skewX(-20deg) scaleY(1); filter: hue-rotate(0deg); }
+  50% { transform: skewX(20deg) scaleY(1.5); filter: hue-rotate(180deg); }
+  100% { transform: skewX(-20deg) scaleY(1); filter: hue-rotate(360deg); }
 }
 
 .wiggle {
   display: inline-block;
-  animation: wiggle 1.6s ease-in-out infinite;
-  transform-origin: center;
+  animation: seizure 0.1s linear infinite !important;
 }
 
-@keyframes pop {
-  0% { transform: scale(0.85); opacity: 0.8; }
-  40% { transform: scale(1.12); opacity: 1; }
-  100% { transform: scale(1); opacity: 1; }
+@keyframes seizure {
+  0% { transform: translate(2px, 2px) rotate(0deg); background: red; }
+  25% { transform: translate(-2px, -2px) rotate(10deg); background: blue; }
+  50% { transform: translate(2px, -2px) rotate(-10deg); background: yellow; }
+  75% { transform: translate(-2px, 2px) rotate(5deg); background: lime; }
+  100% { transform: translate(2px, 2px) rotate(0deg); background: cyan; }
+}
+
+button {
+  border: 10px dashed #ff00ff !important;
+  background: #ffff00 !important;
+  color: #000 !important;
+  transform: rotate(-5deg);
+  transition: 0.1s;
+}
+
+button:hover {
+  transform: rotate(10deg) scale(2);
+  background: #ff0000 !important;
+  color: #fff !important;
 }
 
 .pop {
-  display: inline-block;
-  animation: pop 700ms cubic-bezier(.2,.9,.3,1) both;
+  animation: stroke-dance 0.3s steps(2) infinite;
+}
+
+@keyframes stroke-dance {
+  0% { outline: 10px solid red; transform: scale(1); }
+  50% { outline: 20px solid yellow; transform: scale(1.1); }
+  100% { outline: 10px solid lime; transform: scale(1); }
 }
 
 .emoji-badge {
-  display: inline-flex;
-  align-items: center;
-  gap: 6px;
-  padding: 6px 10px;
-  border-radius: 999px;
-  background: linear-gradient(90deg,#ffecd2,#fcb69f);
-  box-shadow: 0 10px 30px rgba(0,0,0,0.08);
-  font-weight: 600;
+  background: #000 !important;
+  color: #fff !important;
+  border: 5px double white;
+  animation: bounce-crazy 0.4s infinite alternate;
 }
 
-.confetti {
-  position: absolute;
-  inset: 0;
+@keyframes bounce-crazy {
+  from { transform: translateY(0) rotate(0); }
+  to { transform: translateY(-50px) rotate(360deg); }
+}
+
+/* Добавим эффект старого телевизора сверху */
+body::before {
+  content: "КУПИ СЛОНА";
+  position: fixed;
+  top: 0; left: 0; width: 100%; height: 100%;
   pointer-events: none;
-  overflow: hidden;
+  background: repeating-linear-gradient(0deg, rgba(0,0,0,0.1), rgba(0,0,0,0.1) 1px, transparent 1px, transparent 2px);
+  opacity: 0.3;
+  z-index: 100;
 }
-.confetti-piece {
-  position: absolute;
-  width: 10px;
-  height: 14px;
-  border-radius: 2px;
-  opacity: 0.95;
-  transform-origin: center;
-  animation: confetti-fall linear infinite;
-}
-
-@keyframes confetti-fall {
-  0% { transform: translateY(-20vh) rotate(0deg); opacity: 1; }
-  100% { transform: translateY(120vh) rotate(720deg); opacity: 0.8; }
-}
-
-.small-note {
-  font-size: 0.9rem;
-  opacity: 0.9;
-  transform: translateY(0.5px);
-}
-

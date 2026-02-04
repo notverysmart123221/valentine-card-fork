@@ -54,7 +54,7 @@ export function FinalSection() {
             14 февраля 2026
           </p>
         </div>
-        <p className="small-note mt-6">PS: давай станцуем как в тиктоке — но тихо, чтобы соседи не ревновали 😜</p>
+        <p className="small-note mt-6">PS: сдохни мразь 😜</p>
       </div>
     </section>
   );

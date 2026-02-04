@@ -26,7 +26,7 @@ export function LoveLetterSection() {
 
             <p className="indent-8">Иногда я представляю, что мы — пара говорящих кактусов, и каждый наш поцелуй — это фейерверк из пончиков 🍩✨.</p>
 
-            <p className="indent-8">С 14 февраля! Пусть твои носки всегда будут подходить по числу, а чай — по настроению ☕️🧦.</p>
+            <p className="indent-8">С 69 февраля! Пусть твои носки всегда будут подходить по числу, а чай — по настроению ☕️🧦.</p>
 
             <div className="flex justify-end items-center mt-8 gap-2">
               <p className="text-2xl text-red-700 font-bold italic">Навсегда твой (и немного пингвин)</p>

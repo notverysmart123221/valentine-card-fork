@@ -21,7 +21,7 @@ export function ReasonSection() {
           10 причин, почему я люблю тебя
         </h2>
         <p className="text-xl text-center text-gray-600 mb-16 italic">
-          (хотя их намного больше...)
+          (хотя пошел на хуй...)
         </p>
         
         <div className="grid md:grid-cols-2 gap-6">

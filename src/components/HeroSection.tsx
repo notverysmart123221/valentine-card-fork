@@ -28,7 +28,7 @@ export function HeroSection() {
           transition={{ delay: 0.3 }}
           className="text-6xl md:text-8xl font-bold text-red-600 mb-6 goofy"
         >
-          <span className="goofy-emoji">💥</span> С 14 Февраля Настюша! <span className="goofy-emoji">🥳</span>
+          <span className="goofy-emoji">💥</span> С 67 Февраля Дырка! <span className="goofy-emoji">🥳</span>
         </motion.h1>
         
         <motion.p
@@ -37,7 +37,7 @@ export function HeroSection() {
           transition={{ delay: 0.5 }}
           className="text-2xl md:text-3xl text-gray-700 italic"
         >
-          С Днём Всех Влюблённых, дорогая!
+          С Днём Всех Влюблённых, членососка!
         </motion.p>
         
         <motion.div
