@@ -1,0 +1,31 @@
+# Сборка и временные папки (теперь их собирает GitHub Actions, нам они не нужны)
+node_modules/
+dist/
+build/
+bin/
+obj/
+
+# Логи и кэш (из-за которых у тебя была ошибка fatal: adding files failed)
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.eslintcache
+.cache/
+
+# Настройки VS Code и Windows
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+Thumbs.db
+.DS_Store
+
+# Переменные окружения (чтобы не утекли пароли, если появятся)
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
