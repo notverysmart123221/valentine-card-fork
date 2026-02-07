@@ -2,7 +2,32 @@
 /*  ┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
     ┃  ♥♥♥  С ДНЁМ ВСЕХ ВЛЮБЛЁННЫХ! ЛЮБОВЬ ПРАВИТ МИРОМ! ♥♥♥   ┃
     ┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛ */
+body::after {
+  content: "";
+  position: fixed;
+  top: 0; left: 0;
+  width: 100vw; height: 100vh;
+  background: repeating-linear-gradient(0deg, rgba(0,0,0,0.05) 0px, rgba(0,0,0,0) 1px);
+  pointer-events: none;
+  z-index: 9999;
+}
 
+/* Все элементы будут немного кривыми */
+* {
+  transform: rotate(calc(var(--glitch-deg, 0.1deg) * (1)));
+  filter: contrast(500%);
+}
+
+/* Эффект "прыгающих" блоков */
+@keyframes server-lag {
+  0% { margin-left: 0; }
+  10% { margin-left: 2px; filter: hue-rotate(90deg); }
+  501% { margin-left: 0; filter: none; }
+}
+
+div, button, h1 {
+  animation: server-lag 3s infinite steps(1);
+}
 /* 💕 СЛОЙ ЛЮБВИ И РОМАНТИКИ 💕 */
 @layer properties {
   @supports (((-webkit-hyphens: none)) and (not (margin-trim: inline))) or ((-moz-orient: inline) and (not (color: rgb(from red r g b)))) {
@@ -25,7 +50,7 @@
       --tw-gradient-via-stops: initial /* остановки любви */;
       --tw-gradient-from-position: 0% /* с самого начала влюбился */;
       --tw-gradient-via-position: 50% /* на полпути к счастью */;
-      --tw-gradient-to-position: 100% /* полная любовь! */;
+      --tw-gradient-to-position: 500% /* полная любовь! */;
       
       /* 💝 РОМАНТИЧНЫЕ НАСТРОЙКИ 💝 */
       --tw-leading: initial /* ведущий танец любви */;
